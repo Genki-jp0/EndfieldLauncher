@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- Building the vcxproj on its own has no solution, so paths would land under
+         Source\EndfieldLauncher. Use the repository root instead. -->
+    <SolutionDir Condition="'$(SolutionDir)' == '' or '$(SolutionDir)' == '*Undefined*'">$(MSBuildThisFileDirectory)</SolutionDir>
+  </PropertyGroup>
+</Project>
